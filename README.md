@@ -1,6 +1,6 @@
 # Digital Signage API
 
-<p align="center">
+<p align="left">
   <a href="https://codeclimate.com/github/hive-interactive/signage-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/955b32f2ca89c0922803/maintainability" /></a>
   <a href="https://codeclimate.com/github/hive-interactive/signage-api/test_coverage"><img src="https://api.codeclimate.com/v1/badges/955b32f2ca89c0922803/test_coverage" /></a>
 </p>
