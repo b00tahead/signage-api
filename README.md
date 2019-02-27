@@ -1,5 +1,8 @@
 # Digital Signage API
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/95461f359bcf4e44a6f700cec134c423)](https://app.codacy.com/app/b00tahead/signage-api?utm_source=github.com&utm_medium=referral&utm_content=hive-interactive/signage-api&utm_campaign=Badge_Grade_Settings)
+<p align="center">
+  <a href="https://codeclimate.com/github/hive-interactive/signage-api/maintainability"><img src="https://api.codeclimate.com/v1/badges/955b32f2ca89c0922803/maintainability" /></a>
+  <a href="https://codeclimate.com/github/hive-interactive/signage-api/test_coverage"><img src="https://api.codeclimate.com/v1/badges/955b32f2ca89c0922803/test_coverage" /></a>
+</p>
 
 This project is to help create a central API that Intuiface projects can interact with using the API Explorer.
