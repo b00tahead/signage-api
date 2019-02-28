@@ -1,8 +1,8 @@
 // models/employee.js
 
-var mongoose = require('mongoose');
+var mongoose = require('mongoose')
 
-var Schema = mongoose.Schema;
+var Schema = mongoose.Schema
 
 var EmployeeSchema = new Schema(
   {
@@ -14,16 +14,16 @@ var EmployeeSchema = new Schema(
     classification: [String],
     research_interests: [String],
     external_affiliations: [String],
-    as_affiliations: [String],
+    as_affiliations: [String]
   }
-);
+)
 
 // Virtual for employee's full name
 EmployeeSchema
-.virtual('name')
-.get(function() {
-  return this.first_name + ' ' + this.last_name;
-});
+  .virtual('name')
+  .get(function () {
+    return this.first_name + ' ' + this.last_name
+  })
 
 // Export model
-module.exports = mongoose.model('Employee', EmployeeSchema);
+module.exports = mongoose.model('Employee', EmployeeSchema)
