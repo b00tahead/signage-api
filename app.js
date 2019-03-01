@@ -13,7 +13,7 @@ var directoryRouter = require('./routes/directory.js')
 var app = express()
 
 const mongoose = require('mongoose')
-let uri = 'mongodb://heroku_dp3nqz5z:f7uqn99qq0gtd49qr4m6j6d2os@ds157735.mlab.com:57735/heroku_dp3nqz5z'
+let uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}`
 mongoose.connect(uri)
 
 let db = mongoose.connection
