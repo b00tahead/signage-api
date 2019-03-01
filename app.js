@@ -12,13 +12,12 @@ var directoryRouter = require('./routes/directory.js')
 
 var app = express()
 
-// Set up mongoose connection
-var mongoose = require('mongoose')
-var mongoDB = 'mongodb://localhost:27017/signage'
-mongoose.connect(mongoDB, { useNewUrlParser: true })
-mongoose.Promise = global.Promise
-var db = mongoose.connection
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
+const mongoose = require('mongoose')
+let uri = 'mongodb://heroku_dp3nqz5z:f7uqn99qq0gtd49qr4m6j6d2os@ds157735.mlab.com:57735/heroku_dp3nqz5z'
+mongoose.connect(uri)
+
+let db = mongoose.connection
+db.on('error', console.error.bind(console, 'connection error:'))
 
 app.use(logger('dev'))
 app.use(express.json())
